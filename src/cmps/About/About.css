@@ -1,0 +1,54 @@
+/* #about {
+    height:100vh;
+    background-color: aliceblue;
+} */
+
+#about h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row-reverse;
+    margin-bottom: 3rem;
+    color: var(--color-bg-variant);
+}
+
+.about-ctx {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.typo {
+    width: 100%;
+}
+
+video {
+    width:100%;
+    border-radius: 20px;
+}
+
+.about-ctx .video-container {
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+@media (max-width:1140px) {
+    .about-ctx {
+        flex-direction: column;
+    } 
+}
+
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+

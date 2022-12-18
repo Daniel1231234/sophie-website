@@ -1,0 +1,55 @@
+#contact {
+    /* margin-top: 6rem; */
+    /* height:100vh; */
+    /* background-color: bisque; */
+        margin-bottom: 20vh;
+}
+
+.contact-container {
+    background-color: var(--light);
+    height: 100vh;
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: var(--color-bg-variant);
+    margin-bottom: 3rem;
+    /* margin: 1rem auto; */
+}
+
+.contact-ctx {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'form form form'
+    'map map info';
+    grid-gap: 30px;
+
+}
+
+.map-container {
+    width:100%;
+    grid-area: map;
+}
+
+.form-container {
+    grid-area: form;
+}
+
+
+.contact-info {
+    grid-area: info;
+}
+
+@media (max-width:1020px) {
+
+    .contact-ctx {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr .5fr;
+        grid-template-areas:
+            'form'
+            'map'
+            'info';
+    }
+}

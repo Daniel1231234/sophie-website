@@ -1,0 +1,11 @@
+/* #recommends {
+    height: 40vh;
+} */
+
+.rec-ctx {
+    background-color: lightblue;
+    color: darkblue;
+    height: 22rem;
+    margin: auto 2rem;
+    opacity: 0.8;
+}

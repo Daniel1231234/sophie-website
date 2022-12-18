@@ -1,0 +1,41 @@
+/* #experience {
+    height:100vh;
+    background-color:beige;
+} */
+
+.exp-title {
+    margin-bottom: 3rem;
+    color: var(--color-bg-variant);
+    text-align: center;
+}
+
+.experience-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.exp-img-container {
+    display: flex;
+    gap: 1rem;
+}
+.exp-img {
+    opacity:0.8;
+    max-width: 400px;
+    transition: .6s;
+    margin: auto;
+}
+
+.exp-img:hover {
+    opacity:1;
+}
+
+.exp-img img {
+    border-radius: 50px;
+
+}
+
+@media (max-width:1020px) {
+    .experience-container {
+        flex-direction: column;
+    }
+}
